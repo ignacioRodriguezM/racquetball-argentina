@@ -3,81 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Racquetball Argentina | Sitio Oficial</title>
+    <title>Racquetball Argentina | Oficial</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <h1>Racquetball Argentina</h1>
+        <div class="hero">
+            <h1>RACQUETBALL <span>ARGENTINA</span></h1>
+            <p>Velocidad • Reflejos • Adrenalina</p>
+        </div>
         <nav>
             <a href="#inicio">Inicio</a>
+            <a href="#torneo-mayo">Torneo Mayo</a>
+            <a href="#noticias">Noticias</a>
             <a href="#ranking">Ranking</a>
-            <a href="#canchas">Dónde Jugar</a>
-            <a href="#multimedia">Galería</a>
-            <a href="#contacto">Contacto</a>
+            <a href="#canchas">Sedes</a>
+            <a href="#contacto">Sumate</a>
         </nav>
     </header>
 
     <div class="container">
         
-        <section id="inicio" class="card">
-            <h2>Pasión y Velocidad</h2>
-            <p>Bienvenidos a la casa del racquetball argentino. Un deporte donde la pelota viaja a más de 250 km/h y las paredes son tus aliadas.</p>
-            <div class="social-box">
-                <a href="https://www.instagram.com/racquetballargentinaoficial/" target="_blank" class="btn-insta">Síguenos en Instagram</a>
+        <section id="torneo-mayo" class="card highlight">
+            <div class="badge">PRÓXIMO EVENTO</div>
+            <h2>Grand Slam de Mayo: "Copa Ferro 2026"</h2>
+            <div class="event-details">
+                <p><strong>📅 Fecha:</strong> 15 al 18 de Mayo, 2026</p>
+                <p><strong>📍 Sede:</strong> Club Ferro Carril Oeste (CABA)</p>
+                <p><strong>🏆 Categorías:</strong> Open, A, B, C, Damas y Juniors.</p>
+                <p>Se espera la participación de las mejores raquetas del continente. ¡Inscripciones abiertas hasta el 5 de mayo!</p>
+            </div>
+            <a href="https://wa.me/5491100000000" class="btn-primary">Anotarme al Torneo</a>
+        </section>
+
+        <section id="noticias">
+            <h2>Últimas Noticias</h2>
+            <div class="news-grid">
+                <article class="news-item">
+                    <img src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?auto=format&fit=crop&w=400&q=80" alt="Entrenamiento">
+                    <div class="news-content">
+                        <h3>Clínica de Verano en Ferro</h3>
+                        <p>Iniciamos el ciclo de entrenamientos intensivos para menores de 18 años...</p>
+                    </div>
+                </article>
+                <article class="news-item">
+                    <img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=400&q=80" alt="Podio">
+                    <div class="news-content">
+                        <h3>Argentina brilla en el Panamericano</h3>
+                        <p>Nuestras representantes lograron el podio en singles femeninos en la última edición...</p>
+                    </div>
+                </article>
             </div>
         </section>
 
-        <section id="ranking" class="card">
-            <h2>Ranking Nacional 2026</h2>
-            <p>Basado en el ranking oficial de la IRF y torneos locales.</p>
-            <table id="tabla-ranking">
-                <thead>
-                    <tr>
-                        <th>Pos</th>
-                        <th>Jugador/a</th>
-                        <th>Puntos</th>
-                    </tr>
-                </thead>
-                <tbody id="ranking-body">
-                    </tbody>
-            </table>
-        </section>
+        <div class="main-grid">
+            <section id="ranking" class="card">
+                <h2>Top Players 2026</h2>
+                <table id="tabla-ranking">
+                    <tbody id="ranking-body"></tbody>
+                </table>
+            </section>
 
-        <section id="canchas" class="card">
-            <h2>¿Dónde jugar en Argentina?</h2>
-            <div class="grid-canchas">
-                <div class="cancha-item">
-                    <h3>Club Ferro Carril Oeste (Sede Caballito)</h3>
-                    <p>📍 García Lorca 189, CABA.</p>
-                    <p>El centro de alto rendimiento más importante del país. Cuenta con canchas vidriadas profesionales.</p>
+            <section class="card">
+                <h2>Acción en la Cancha</h2>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/Cy38eEB5p0Y" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <div class="cancha-item">
-                    <h3>Otras sedes</h3>
-                    <p>Existen núcleos de juego en <strong>Mendoza</strong> y <strong>Mar del Plata</strong>. Consulta disponibilidad para clases personalizadas.</p>
-                </div>
+            </article>
+        </div>
+
+        <section class="card info-sport">
+            <h2>Sobre el Racquetball</h2>
+            <p>A diferencia del Squash, aquí la pelota es más grande, rebota más y **todo vale**: paredes, techo y piso. ¡No hay red!</p>
+            
+        </section>
+
+        <section id="canchas" class="card map-section">
+            <h2>Nuestra Casa: Ferro</h2>
+            <p><strong>Sede Social:</strong> García Lorca 189, Caballito, CABA.</p>
+            <p>Contamos con 4 canchas reglamentarias con vidrios para espectadores.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/racquetballargentinaoficial/" target="_blank" class="btn-insta">Instagram Oficial</a>
             </div>
         </section>
 
-        <section id="multimedia" class="card">
-            <h2>Multimedia</h2>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/Cy38eEB5p0Y" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="image-placeholder">
-                <p>📸 <em>Tip: Sube tus fotos a una carpeta llamada /img y línkealas aquí para mostrar la acción.</em></p>
-            </div>
-        </section>
-
-        <section id="contacto" class="card">
-            <h2>Contacta a los Organizadores</h2>
-            <p>Haz clic para chatear directamente con los referentes de cada zona:</p>
-            <div class="whatsapp-grid">
-                <a href="https://wa.me/5491100000000" class="btn-ws">WhatsApp Ferro (Admin)</a>
-                <a href="https://wa.me/5491100000000" class="btn-ws">WhatsApp Torneos</a>
-            </div>
-        </section>
     </div>
 
     <footer>
