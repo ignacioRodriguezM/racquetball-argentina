@@ -3,86 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Racquetball Argentina</title>
-    <style>
-        /* Estilos básicos */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-        }
-        
-        /* Encabezado */
-        header {
-            background-color: #74ACDF; /* Celeste argentino */
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        nav {
-            margin-top: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        /* Contenido principal */
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px 0;
-        }
-        
-        /* Secciones */
-        .section {
-            background: #f4f4f4;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .section h2 {
-            color: #74ACDF;
-            border-bottom: 2px solid #74ACDF;
-            padding-bottom: 5px;
-        }
-
-        /* Botón de llamado a la acción */
-        .btn {
-            display: inline-block;
-            background: #333;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        .btn:hover {
-            background: #74ACDF;
-        }
-
-        /* Pie de página */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Racquetball Argentina | Sitio Oficial</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -90,46 +12,78 @@
         <h1>Racquetball Argentina</h1>
         <nav>
             <a href="#inicio">Inicio</a>
-            <a href="#deporte">El Deporte</a>
-            <a href="#torneos">Torneos</a>
+            <a href="#ranking">Ranking</a>
+            <a href="#canchas">Dónde Jugar</a>
+            <a href="#multimedia">Galería</a>
             <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
     <div class="container">
-        <div id="inicio" class="section">
-            <h2>Bienvenido a la comunidad</h2>
-            <p>El sitio oficial para todos los amantes del racquetball en la República Argentina. Aquí encontrarás información sobre canchas, reglas, torneos locales y cómo sumarte a este increíble deporte de velocidad y reflejos.</p>
-        </div>
+        
+        <section id="inicio" class="card">
+            <h2>Pasión y Velocidad</h2>
+            <p>Bienvenidos a la casa del racquetball argentino. Un deporte donde la pelota viaja a más de 250 km/h y las paredes son tus aliadas.</p>
+            <div class="social-box">
+                <a href="https://www.instagram.com/racquetballargentinaoficial/" target="_blank" class="btn-insta">Síguenos en Instagram</a>
+            </div>
+        </section>
 
-        <div id="deporte" class="section">
-            <h2>¿Qué es el Racquetball?</h2>
-            <p>Es un deporte de raqueta que se juega en una pista totalmente cerrada, donde no hay red que divida la cancha. Los jugadores pueden golpear la pelota contra cualquiera de las paredes (incluido el techo), lo que lo hace uno de los deportes de raqueta más rápidos y dinámicos del mundo.</p>
-            
-            
-            
-            <p><strong>Beneficios:</strong> Mejora la salud cardiovascular, los reflejos, la coordinación y ayuda a quemar calorías rápidamente mientras te diviertes.</p>
-        </div>
+        <section id="ranking" class="card">
+            <h2>Ranking Nacional 2026</h2>
+            <p>Basado en el ranking oficial de la IRF y torneos locales.</p>
+            <table id="tabla-ranking">
+                <thead>
+                    <tr>
+                        <th>Pos</th>
+                        <th>Jugador/a</th>
+                        <th>Puntos</th>
+                    </tr>
+                </thead>
+                <tbody id="ranking-body">
+                    </tbody>
+            </table>
+        </section>
 
-        <div id="torneos" class="section">
-            <h2>Próximos Torneos y Encuentros</h2>
-            <p>Mantenete al tanto de los circuitos nacionales y torneos amateur. ¡No importa tu nivel, siempre hay una categoría para vos!</p>
-            <ul>
-                <li><strong>Torneo Nacional Apertura:</strong> Fecha a confirmar.</li>
-                <li><strong>Encuentros amistosos:</strong> Todos los sábados en clubes adheridos.</li>
-            </ul>
-        </div>
+        <section id="canchas" class="card">
+            <h2>¿Dónde jugar en Argentina?</h2>
+            <div class="grid-canchas">
+                <div class="cancha-item">
+                    <h3>Club Ferro Carril Oeste (Sede Caballito)</h3>
+                    <p>📍 García Lorca 189, CABA.</p>
+                    <p>El centro de alto rendimiento más importante del país. Cuenta con canchas vidriadas profesionales.</p>
+                </div>
+                <div class="cancha-item">
+                    <h3>Otras sedes</h3>
+                    <p>Existen núcleos de juego en <strong>Mendoza</strong> y <strong>Mar del Plata</strong>. Consulta disponibilidad para clases personalizadas.</p>
+                </div>
+            </div>
+        </section>
 
-        <div id="contacto" class="section">
-            <h2>Sumate a jugar</h2>
-            <p>¿Querés empezar a jugar, buscar rivales o saber dónde hay canchas cerca de tu casa? Escribinos para unirte a nuestro grupo de WhatsApp o lista de correo.</p>
-            <a href="mailto:info@racquetballargentina.com" class="btn">Enviar un correo</a>
-        </div>
+        <section id="multimedia" class="card">
+            <h2>Multimedia</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/Cy38eEB5p0Y" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="image-placeholder">
+                <p>📸 <em>Tip: Sube tus fotos a una carpeta llamada /img y línkealas aquí para mostrar la acción.</em></p>
+            </div>
+        </section>
+
+        <section id="contacto" class="card">
+            <h2>Contacta a los Organizadores</h2>
+            <p>Haz clic para chatear directamente con los referentes de cada zona:</p>
+            <div class="whatsapp-grid">
+                <a href="https://wa.me/5491100000000" class="btn-ws">WhatsApp Ferro (Admin)</a>
+                <a href="https://wa.me/5491100000000" class="btn-ws">WhatsApp Torneos</a>
+            </div>
+        </section>
     </div>
 
     <footer>
         <p>&copy; 2026 Racquetball Argentina. Pasión por el deporte.</p>
     </footer>
 
+    <script src="ranking.js"></script>
 </body>
 </html>
